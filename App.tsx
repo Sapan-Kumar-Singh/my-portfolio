@@ -1,9 +1,19 @@
 
+import Navbar from "./src/navbar"
+import StaticRouter from "./src/staticRoutes";
+
+
+
 
 const App = () => {
+  console.log("app rendrere");
+  
+
   return (
     <>
-      <h1 className="text-3xl font-bold "> Hello world!</h1>
+    <Navbar/>
+   <StaticRouter/>
+
     </>
   )
 }
