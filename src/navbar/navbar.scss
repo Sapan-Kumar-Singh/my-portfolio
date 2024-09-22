@@ -1,8 +1,9 @@
-.navbar-light{
-    background: transparent !important;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 3;
+@media only screen and (max-width:1023px) {
+
+    .nav-display-hidden{
+        display: none !important;
+    }
+    .display-menu-icon{
+        display: flex !important;
+    }
 }

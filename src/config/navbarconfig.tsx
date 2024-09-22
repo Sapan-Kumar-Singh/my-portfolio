@@ -1,42 +1,51 @@
 
-interface NavbarConfig {
-    headerName: string;
-    field: string;
-    href:string;
-}
 
 export const navbarConfig: NavbarConfig[] = [{
     headerName: 'Home',
     field: 'home',
-    href:'/'
+    hidden:false,
+    navigateTo:'/',
 
 },
 {
     headerName: 'About',
     field: 'about',
-    href:'about',
+    hidden:false,
+    navigateTo:'about',
 },
 {
     headerName: 'Resume',
     field: 'resume',
-    href:'resume'
+    hidden:false,
+    navigateTo:'resume'
 },
 {
     headerName: 'Services',
     field: 'services',
-    href:'services',
+    hidden:false,
+    navigateTo:'services',
 }, {
     headerName: 'Skills',
     field: 'skills',
-    href:'skills'
+    hidden:false,
+    navigateTo:'skills'
 },
 {
     headerName: 'Projects',
     field: 'projects',
-    href:'projects'
+    hidden:false,
+    navigateTo:'projects'
+},
+{
+  headerName:'My Blog',
+  field:'myBlog',
+  hidden:true,
+  navigateTo:'myBlog'
+
 },
 {
     headerName: 'Contact',
     field: 'contact',
-    href:'contact',
+    hidden:false,
+    navigateTo:'contact',
 }]
