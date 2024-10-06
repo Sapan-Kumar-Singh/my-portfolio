@@ -1,0 +1,35 @@
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.3); // Start even smaller for a more pronounced effect
+  }
+  60% {
+    transform: scale(1.1); // Scale up slightly
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); // End at original size
+  }
+}
+
+@keyframes bounce-out {
+  0% {
+    opacity: 1;
+    transform: scale(1); // Start at original size
+  }
+  60% {
+    transform: scale(1.1); // Scale up slightly before disappearing
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.3); // Scale down more while fading out
+  }
+}
+
+.animate-bounce-in {
+  animation: bounce-in 1s ease forwards; // Bounce in animation with slower duration
+}
+
+.animate-bounce-out {
+  animation: bounce-out 1s ease forwards; // Bounce out animation with slower duration
+}
