@@ -8,8 +8,8 @@ const Navbar = memo(() => {
     return (
         <>
             <nav className="bg-black flex justify-between w-full py-5  my-0 ">
-            <NavLink to="/" className=" text-white font-black text-2xl uppercase ml-20">Sapan</NavLink>
-
+            <NavLink to="/" className="ml-20 -mt-3"><div className='nav-icon text-black text-5xl font-semibold'>Sapan</div></NavLink>
+               
                 <div className='flex basis-auto nav-display-hidden mr-20'>
                     <ul className='flex list-none pl-0 ml-auto flex-row flex-wrap'>
                         {

@@ -35,3 +35,18 @@ interface ButtonProps{
    size?: 'small' | 'medium' | 'large'; 
    loading?: boolean;  
 }
+
+
+interface AboutUser{
+    headerName:string;
+    field?:string;
+    value:string;
+    hidden?:boolean;
+
+}
+
+interface AboutConfig{
+    title:string;
+    subtitle:string;
+    aboutUser:AboutUser[];
+}

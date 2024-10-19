@@ -42,7 +42,7 @@ const HomePage = () => {
 
           {/* Image Section (aligned horizontally) */}
           <div className="mr-20">
-            <img src="/icons/sapanFirst.svg" alt="loading..." />
+            <img className='h-screen w-96' src="/icons/sapanFirst.svg" alt="loading..." />
           </div>
         </div>
 
@@ -72,7 +72,7 @@ const HomePage = () => {
 
           {/* Image Section (aligned horizontally) */}
           <div className="mr-20">
-            <img src="/icons/sapanFirst.svg" alt="loading..." />
+            <img className='h-screen w-96' src="/icons/sapanFirst.svg" alt="loading..." />
           </div>
         </div>
       </div>
