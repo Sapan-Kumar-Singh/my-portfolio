@@ -13,7 +13,10 @@ export default {
       },
       letterSpacing:{
         widest: '.25em',
-      }
+      },
+      backgroundImage:{
+         'card-gradient':'linear-gradient(71deg, #080509, #1a171c, #080509)'
+      },
     },
   },
   plugins: [],

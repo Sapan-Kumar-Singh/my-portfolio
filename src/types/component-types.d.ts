@@ -47,6 +47,31 @@ interface AboutUser{
 
 interface AboutConfig{
     title:string;
-    subtitle:string;
+    subTitle?:string;
     aboutUser:AboutUser[];
+}
+
+interface ResumeDesc {
+    duration: string;
+    title: string;
+    subTitle: string;
+    description: string;
+
+}
+interface ResumeConfig {
+    title: string;
+    subTitle?: string;
+    resumeDesc: ResumeDesc[];
+}
+
+interface ServiseDesc{
+    headerName:string;
+    field:string;
+    value:string;
+}
+
+interface ServicesConfig{
+    title:string;
+    subTitle?:string;
+    servicedesc:ServiceDesc[];
 }

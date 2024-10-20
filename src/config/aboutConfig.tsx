@@ -3,7 +3,7 @@
 
 export const aboutConfig:AboutConfig={
     title: "About Me",
-    subtitle: "In the heart of the program, a small loop runs tirelessly, providing logic with the necessary iteration.",
+    subTitle: "In the heart of the program, a small loop runs tirelessly, providing logic with the necessary iteration.",
     aboutUser: [{
         headerName:'Name :',
         field:'name',
