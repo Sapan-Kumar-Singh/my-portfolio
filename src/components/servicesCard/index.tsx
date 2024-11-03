@@ -1,24 +1,31 @@
+import SvgImage from "../svgComp";
 
-const ServicesCard = () => {
+const ServicesCard = ({ headerName, serviceIcon }: ServiceDesc) => {
     return (
-        <>
-            <div className="card max-w-72  w-full ms-auto me-auto border-none">
-                <div className="container-card relative p-9 border-2 border-transparent bg-card-gradient bg-clip-padding rounded-lg">
-                    {/* <p className="card-date text-3xl font-black text-light-orange">{duration}</p>
-                    <p className="card-title py-4 text-2xl font-semibold text-white">
-                        {title}
-                    </p>
-                    <p className="card-subTitle text-xs font-semibold tracking-widest uppercase">
-                        {subTitle}
-                    </p>
-                    <p className="card-description my-4">
-                        {description}
-                    </p> */}
+        <div className="card w-80 ms-auto me-auto border-none">
+            <div className="container-card 
+                            relative p-9 border-2 border-transparent 
+                            bg-card-gradient bg-clip-padding rounded-lg 
+                            text-center transition-transform duration-300 
+                            hover:scale-105 hover:shadow-lg 
+                            transition-colors duration-1000 ease-in-out 
+                            hover:bg-card-gradient-hover
+                            hover:opacity-75
+                            hover:cursor-pointer">
+                <div className="inline-block">
+                    <SvgImage 
+                        fileName={serviceIcon?.fileName} 
+                        svgHeight={serviceIcon?.height} 
+                        svgWidth={serviceIcon?.width} 
+                        fillColor={serviceIcon?.fillColor}
+                    />
                 </div>
-
+                <div className="pt-2 text-sm font-medium text-white underline-service hover:text-gray-300">
+                    {headerName}
+                </div>
             </div>
-        </>
-    )
-}
+        </div>
+    );
+};
 
-export default ServicesCard
+export default ServicesCard;

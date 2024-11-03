@@ -15,7 +15,8 @@ export default {
         widest: '.25em',
       },
       backgroundImage:{
-         'card-gradient':'linear-gradient(71deg, #080509, #1a171c, #080509)'
+         'card-gradient':'linear-gradient(71deg, #080509, #1a171c, #080509)',
+         'card-gradient-hover': 'linear-gradient(71deg,#ffbd39, #f5c342, #ffe69a)',
       },
     },
   },

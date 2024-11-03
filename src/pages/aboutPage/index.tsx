@@ -1,12 +1,12 @@
 import { aboutConfig } from "../../config/aboutConfig"
 import PagesHeader from "../../components/pagesHeader"
 
-
 const AboutPage = () => {
     return (
         <>
+    
             <div className="conatiner flex justify-around mt-7">
-                <div ><img className="h-screen w-96" src="/icons/sapanFirst.svg" alt="loading..." /></div>
+                <div ><img className="h-screen w-96" src="/icons/primaryImage.svg" alt="loading..." /></div>
                 <div>
                     <PagesHeader pageTitle={aboutConfig.title}  pageSubTitle={aboutConfig.subTitle}/>
                     <ul className="mt-4">

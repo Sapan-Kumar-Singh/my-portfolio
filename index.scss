@@ -41,6 +41,18 @@
     transition: transform 0.2s;
 }
 
+.underline-service::after{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    content: '';
+    width: 30px;
+    height: 1px;
+    background: #ffbd39;
+    margin: 0 auto;
+}
+
    
 }
 

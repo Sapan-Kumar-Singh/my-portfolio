@@ -2,6 +2,7 @@ import { memo } from 'react'
 import { navbarConfig } from '../config/navbarconfig';
 import { NavLink } from 'react-router-dom';
 import './navbar.scss'
+import SvgImage from '../components/svgComp';
 
 const Navbar = memo(() => {
 
@@ -37,7 +38,7 @@ const Navbar = memo(() => {
                 </div>
                 <div  className='hidden display-menu-btn mr-20'>
                     <button className='flex'>
-                        <img src="/icons/menu.svg" alt="menu" className='w-8 h-6 ' />
+                        <SvgImage fileName='menu' svgHeight='50px' svgWidth='50px'/>
                     </button>
                 </div>
             </nav>

@@ -64,10 +64,17 @@ interface ResumeConfig {
     resumeDesc: ResumeDesc[];
 }
 
-interface ServiseDesc{
+interface ServiceIcon{
+    fileName:string;
+    height:string;
+    width:string;
+    fillColor:string;
+}
+interface ServiceDesc{
     headerName:string;
-    field:string;
-    value:string;
+    field?:string;
+    serviceIcon:ServiceIcon;
+    hidden?:boolean;
 }
 
 interface ServicesConfig{

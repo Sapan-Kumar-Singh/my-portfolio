@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Button from "../../button";
 import { developerIntro, developerShortInfo } from "../../config/homeConfig";
 import './home.scss';
+import SvgImage from '../../components/svgComp';
 
 const HomePage = () => {
   const [showFirst, setShowFirst] = useState(true);
@@ -18,13 +19,11 @@ const HomePage = () => {
   return (
     <div className="container bg-black relative flex justify-center items-center h-screen">
       <div className="relative w-full h-full">
-        {/* First div */}
         <div
           className={`absolute inset-0 flex items-center justify-between transition-opacity duration-500 ease-in-out ${
             showFirst ? 'opacity-100 scale-100 animate-bounce-in' : 'opacity-0 scale-90 animate-bounce-out'
           }`}
         >
-          {/* Text Section */}
           <div className="ml-20">
             <span className="bg-transparent tracking-widest text-light-orange mb-4 uppercase text-sm">Hello!</span>
             <div className="mb-4 mt-3 bg-transparent text-white text-6xl font-extrabold">
@@ -40,13 +39,11 @@ const HomePage = () => {
             </div>
           </div>
 
-          {/* Image Section (aligned horizontally) */}
           <div className="mr-20">
-            <img className='h-screen w-96' src="/icons/sapanFirst.svg" alt="loading..." />
+          <img className='h-screen w-96' src="/icons/primaryImage.svg" alt="loading..." />
           </div>
         </div>
 
-        {/* Second div */}
         <div
           className={`absolute inset-0 flex items-center justify-between transition-opacity duration-500 ease-in-out ${
             showFirst ? 'opacity-0 scale-90 animate-bounce-out' : 'opacity-100 scale-100 animate-bounce-in'
@@ -72,7 +69,7 @@ const HomePage = () => {
 
           {/* Image Section (aligned horizontally) */}
           <div className="mr-20">
-            <img className='h-screen w-96' src="/icons/sapanFirst.svg" alt="loading..." />
+            <img className='h-screen w-96' src="/icons/primaryImage.svg" alt="loading..." />
           </div>
         </div>
       </div>

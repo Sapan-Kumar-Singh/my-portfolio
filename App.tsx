@@ -5,6 +5,7 @@ import StaticRouter from "./src/staticRoutes";
 const App = () => {
   return (
     <>
+        
     <Navbar/>
    <StaticRouter/>
 
