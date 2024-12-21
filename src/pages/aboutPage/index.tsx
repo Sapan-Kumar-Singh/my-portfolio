@@ -6,7 +6,7 @@ const AboutPage = () => {
         <>
     
             <div className="conatiner flex justify-around mt-7">
-                <div ><img className="h-screen w-96" src="/icons/primaryImage.svg" alt="loading..." /></div>
+                <div ><img className="h-screen w-96" src="/images/sapan_primary.png" alt="loading..." /></div>
                 <div>
                     <PagesHeader pageTitle={aboutConfig.title}  pageSubTitle={aboutConfig.subTitle}/>
                     <ul className="mt-4">

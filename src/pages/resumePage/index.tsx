@@ -6,7 +6,7 @@ import ResumeCard from "../../components/resumeCard"
 const ResumePage = () => {
   return (
     <>
-      <div className="resume-container p-20">
+      <div className="resume-container p-10">
            <div className="text-center">
            <PagesHeader pageTitle={resumeConfig.title} pageSubTitle={resumeConfig.subTitle}/>
            </div>

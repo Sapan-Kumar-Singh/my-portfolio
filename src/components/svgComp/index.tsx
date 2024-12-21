@@ -5,16 +5,16 @@ interface SvgImageProps {
   svgHeight?: string;
   svgWidth?: string;
   fillColor?: string;
+  hoverFillColor?:string
 }
 
 const SvgImage = ({
   fileName,
   svgHeight = '100px',
   svgWidth = '100px',
-  fillColor = 'none'
+  fillColor = 'none',
 }: SvgImageProps) => {
   const [svgContent, setSvgContent] = useState<string | null>(null);
-
   useEffect(() => {
     fetch(`/icons/${fileName}.svg`)
       .then((response) => response.text())

@@ -21,20 +21,40 @@ interface DeveloperShortInfo{
     expertise:string;
 }
 
-interface ButtonProps{
-   label:string;
-   onClick: (event: React.MouseEvent<HTMLButtonElement>) => void; 
-   type?: 'button' | 'submit' | 'reset';
-   disabled?: boolean;  
-   style?: React.CSSProperties;  
-   className?: string; 
-   icon?: JSX.Element; 
-   iconPosition?: 'left' | 'right';  
-   ariaLabel?: string;  
-   variant?: 'text' | 'outline';  
-   size?: 'small' | 'medium' | 'large'; 
-   loading?: boolean;  
+
+interface CustomButton {
+    label:string;
+    onClick: (event: React.MouseEvent<HTMLButtonElement>) => void; 
+    type?: 'button' | 'submit' | 'reset';
+    disabled?: boolean;  
+    style?: React.CSSProperties;  
+    className?: string; 
+    icon?: JSX.Element; 
+    iconPosition?: 'left' | 'right';  
+    ariaLabel?: string;  
+    variant?: 'text' | 'outline';  
+    size?: 'small' | 'medium' | 'large'; 
+    loading?: boolean;  
+ }
+type type='text' | 'textArea' | 'checkbox' | 'email' | 'password' | 'number' | 'date';
+
+interface InputField{
+   type:type;
+   headerName?:string;
+   field:string;
+   placeholder?:string;
+   size?:String;
+   height?:string;
+   required?:boolean;
+   hidden?:boolean;
+   rows?:string;
+   cols?:string;
+   name:string;
 }
+
+
+
+
 
 
 interface AboutUser{
@@ -64,16 +84,18 @@ interface ResumeConfig {
     resumeDesc: ResumeDesc[];
 }
 
-interface ServiceIcon{
+interface IconDetail{
     fileName:string;
     height:string;
     width:string;
     fillColor:string;
 }
+
+
 interface ServiceDesc{
     headerName:string;
     field?:string;
-    serviceIcon:ServiceIcon;
+    iconDetail:IconDetail;
     hidden?:boolean;
 }
 
@@ -81,4 +103,45 @@ interface ServicesConfig{
     title:string;
     subTitle?:string;
     servicedesc:ServiceDesc[];
+}
+
+
+
+interface SkillDesc{
+    headerName:string;
+    field?:string;
+    iconDetail:IconDetail;
+    hidden?:boolean;
+}
+
+interface NavIcon{
+    iconsDetail:IconDetail[]
+}
+interface SkillsConfig{
+    title:string;
+    subTitle?:string;
+    skillDesc:SkillDesc[];
+}
+
+interface ProjDesc{
+    imgName:string;
+    projLink?:string;
+}
+
+interface ProjectsConfig{
+    title:string;
+    subtitle?:string;
+    projDesc:ProjDesc[];
+}
+
+interface FormGrp{
+    inputFields:InputField[];
+    submitBtn:CustomButton;
+     
+}
+
+interface ContactConfig{
+    title:string;
+    subtitle?:string;
+    formGrp:FormGrp;
 }

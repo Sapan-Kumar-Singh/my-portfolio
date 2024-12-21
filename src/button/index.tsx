@@ -1,22 +1,9 @@
 import React from 'react';
 import './button.scss';
 
-interface ButtonProps {
-  label: string;
-  onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
-  type?: 'button' | 'submit' | 'reset';
-  disabled?: boolean;
-  style?: React.CSSProperties;
-  className?: string;
-  icon?: JSX.Element;
-  iconPosition?: 'left' | 'right';
-  ariaLabel?: string;
-  variant?: 'text' | 'outline';
-  size?: 'small' | 'medium' | 'large';
-  loading?: boolean;
-}
 
-const Button: React.FC<ButtonProps> = ({
+
+const Button: React.FC<CustomButton> = ({
   label,
   onClick,
   type = 'button',
@@ -38,6 +25,7 @@ const Button: React.FC<ButtonProps> = ({
   };
 
   return (
+    <div className='m-2'>
     <button
       type={type}
       onClick={onClick}
@@ -57,6 +45,7 @@ const Button: React.FC<ButtonProps> = ({
         </>
       )}
     </button>
+    </div>
   );
 };
 

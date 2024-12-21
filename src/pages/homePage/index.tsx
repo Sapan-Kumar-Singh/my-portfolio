@@ -2,10 +2,11 @@ import { useState, useEffect } from 'react';
 import Button from "../../button";
 import { developerIntro, developerShortInfo } from "../../config/homeConfig";
 import './home.scss';
-import SvgImage from '../../components/svgComp';
+import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
   const [showFirst, setShowFirst] = useState(true);
+  const navigate=useNavigate();
 
   // Toggle between showing the first and second div automatically
   useEffect(() => {
@@ -40,7 +41,7 @@ const HomePage = () => {
           </div>
 
           <div className="mr-20">
-          <img className='h-screen w-96' src="/icons/primaryImage.svg" alt="loading..." />
+          <img className='h-screen w-96' src="/images/sapan_primary.png" alt="loading..." />
           </div>
         </div>
 
@@ -62,14 +63,14 @@ const HomePage = () => {
               in <span>{developerShortInfo.loaction}</span>
             </div>
             <div className="mt-8 flex gap-10">
-              <Button label={"Hire me"} onClick={() => console.log("clicked")} />
-              <Button label={"My work"} variant="outline" onClick={() => console.log("clicked")} />
+              <Button label={"Hire me"} onClick={() => navigate('/contact')} />
+              <Button label={"My work"} variant="outline" onClick={() => navigate('/services')} />
             </div>
           </div>
 
           {/* Image Section (aligned horizontally) */}
           <div className="mr-20">
-            <img className='h-screen w-96' src="/icons/primaryImage.svg" alt="loading..." />
+          <img className='h-screen w-96' src="/images/sapan_primary.png" alt="loading..." />
           </div>
         </div>
       </div>

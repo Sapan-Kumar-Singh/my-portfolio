@@ -5,7 +5,7 @@ export const servicesConfig: ServicesConfig = {
     subTitle: 'React developers transform complex business needs into sleek, efficient user experiences with reusable components.',
     servicedesc: [{
         headerName: 'Front-End Development',
-        serviceIcon: {
+        iconDetail: {
             fileName: "frontend",
             height: "75px",
             width: "75px",
@@ -15,7 +15,7 @@ export const servicesConfig: ServicesConfig = {
 
     }, {
         headerName: 'Back-End Development',
-        serviceIcon: {
+        iconDetail: {
             fileName: "backend",
             height: "75px",
             width: "75px",
@@ -24,7 +24,7 @@ export const servicesConfig: ServicesConfig = {
         hidden: false,
     }, {
         headerName: 'Maintenance',
-        serviceIcon: {
+        iconDetail: {
             fileName: "maintainance",
             height: "75px",
             width: "75px",
@@ -33,7 +33,7 @@ export const servicesConfig: ServicesConfig = {
         hidden: false,
     }, {
         headerName: 'Database Design',
-        serviceIcon: {
+        iconDetail: {
             fileName: "maintainance",
             height: "75px",
             width: "75px",
@@ -42,7 +42,7 @@ export const servicesConfig: ServicesConfig = {
         hidden: false,
     }, {
         headerName: 'Version Control',
-        serviceIcon: {
+        iconDetail: {
             fileName: "versionControl",
             height: "75px",
             width: "75px",
@@ -52,7 +52,7 @@ export const servicesConfig: ServicesConfig = {
     }, {
 
         headerName: 'Project Architecture',
-        serviceIcon: {
+        iconDetail: {
             fileName: "artictureDesign",
             height: "75px",
             width: "75px",
@@ -62,7 +62,7 @@ export const servicesConfig: ServicesConfig = {
 
     }, {
         headerName: 'API Integration',
-        serviceIcon: {
+        iconDetail: {
             fileName: "api",
             height: "75px",
             width: "75px",
@@ -71,7 +71,7 @@ export const servicesConfig: ServicesConfig = {
         hidden: false,
     }, {
         headerName: 'Security Implementation',
-        serviceIcon: {
+        iconDetail: {
             fileName: "security",
             height: "75px",
             width: "75px",
@@ -80,7 +80,7 @@ export const servicesConfig: ServicesConfig = {
         hidden: false,
     }, {
         headerName: 'Testing - debuging',
-        serviceIcon: {
+        iconDetail: {
             fileName: "testing",
             height: "75px",
             width: "75px",
