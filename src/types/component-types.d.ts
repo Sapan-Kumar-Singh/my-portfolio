@@ -145,3 +145,15 @@ interface ContactConfig{
     subtitle?:string;
     formGrp:FormGrp;
 }
+
+interface SocialMediaData{
+    field:string;
+    icon:JSX.Element;
+    bgColor:string;
+    textColor:string;
+    link?:string;
+}
+
+interface SocialMediaConfig{
+    socialMediaData:SocialMediaData[]
+}
