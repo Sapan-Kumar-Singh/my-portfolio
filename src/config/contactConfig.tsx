@@ -7,23 +7,23 @@ export const contactConfig:ContactConfig={
    formGrp:{
     inputFields:[{
         type:'text',
-        field:'userName',
+        field:'user_name',
         placeholder:'Enter your name',
         size:'80',
-        name:'userName',
+        name:'user_name',
     },{
         type:'email',
-        field:'userEmail',
+        field:'user_email',
         placeholder:'Enter your email',
         size:'80',
-        name:'userEmail'
+        name:'user_email'
     },{
         type:'textArea',
-        field:'userMessage',
+        field:'user_message',
         placeholder:'Enter your message',
         rows:'5',
         cols:'83',
-        name:'userMessage'
+        name:'user_message'
     }],
     submitBtn:{
     label:'Send message',

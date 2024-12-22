@@ -14,9 +14,13 @@ const SocialMedia = () => {
       {
         socilaMediaConfig.socialMediaData.map((socialMediaData:SocialMediaData)=>{
           if(socialMediaData.link){
-            return <a href={socialMediaData?.link} target="_blank" className={`block text-center p-3.5 text-lg transition-all ${socialMediaData.bgColor } ${socialMediaData.textColor} hover:bg-black hover:text-white`}>{socialMediaData.icon}</a>
+            return <div key={socialMediaData.field}>
+              <a href={socialMediaData?.link} target="_blank" className={`block text-center p-3.5 text-lg transition-all ${socialMediaData.bgColor } ${socialMediaData.textColor} hover:bg-black hover:text-white`}>{socialMediaData.icon}</a>
+            </div>
           }
-          return <a href={socialMediaData?.link}  download='sample.pdf' className={`block text-center p-3.5 text-lg transition-all ${socialMediaData.bgColor } ${socialMediaData.textColor} hover:bg-black hover:text-white`}>{socialMediaData.icon}</a>
+          return <div key={socialMediaData.field}>
+            <a href={socialMediaData?.link}  download='sample.pdf' className={`block text-center p-3.5 text-lg transition-all ${socialMediaData.bgColor } ${socialMediaData.textColor} hover:bg-black hover:text-white`}>{socialMediaData.icon}</a>
+          </div>
         })
       }
   </div>
