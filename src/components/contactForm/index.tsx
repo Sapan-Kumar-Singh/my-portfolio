@@ -34,7 +34,7 @@ const ContactForm = ({ inputFields, submitBtn }: FormGrp) => {
       <div >
         <Formik initialValues={initialValues}
           validationSchema={validationSchema()}
-          onSubmit={(values, { setSubmitting }) => {
+          onSubmit={(values, { setSubmitting ,resetForm}) => {
             
             setTimeout(() => {
               const SERVICE_ID='service_wbnj836';
@@ -46,6 +46,7 @@ const ContactForm = ({ inputFields, submitBtn }: FormGrp) => {
                 toast.success("email send successfully!",{
                   position:'top-center'
                 })
+                resetForm();
               },(error)=>{
                 toast.error(`Email failed to send:${error}`,{
                   position:'top-center'

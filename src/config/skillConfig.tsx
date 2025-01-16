@@ -1,7 +1,7 @@
 
 export const skillsConfig:SkillsConfig={
     title: "My skills",
-    subTitle:'Transforms ideas into complete digital solutions, blending front-end elegance, back-end resilience, and seamless data flow to create scalable, user-centered applications.',
+    subTitle:'Skill is the unified force of experience, intellect, and passion in their operation.',
     skillDesc:[{
         headerName:'Html',
         field:'html',

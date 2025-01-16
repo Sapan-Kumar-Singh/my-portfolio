@@ -2,7 +2,6 @@ import React from 'react'
 import PagesHeader from '../../components/pagesHeader'
 import { contactConfig } from '../../config/contactConfig'
 import ContactForm from '../../components/contactForm'
-import SocialMedia from '../../components/socialMedia'
 
 const ContactPage = () => {
   return (

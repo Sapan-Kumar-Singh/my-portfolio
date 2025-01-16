@@ -13,7 +13,7 @@ const ResumePage = () => {
            <div className="grid-container grid grid-cols-2 gap-6 ">
             {
                 resumeConfig.resumeDesc.map((eachResumeDesc:ResumeDesc)=>{
-                    return <div>
+                    return <div key={eachResumeDesc.subTitle}>
                         <ResumeCard duration ={eachResumeDesc.duration} title={eachResumeDesc.title} subTitle={eachResumeDesc.subTitle}  description={eachResumeDesc.description} />
                     </div>
                 })

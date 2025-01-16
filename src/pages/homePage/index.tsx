@@ -18,7 +18,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="container bg-black relative flex justify-center items-center h-screen">
+    <div className="container ml-10 bg-black relative flex justify-center items-center h-screen">
       <div className="relative w-full h-full">
         <div
           className={`absolute inset-0 flex items-center justify-between transition-opacity duration-500 ease-in-out ${
@@ -41,7 +41,7 @@ const HomePage = () => {
           </div>
 
           <div className="mr-20">
-          <img className='h-screen w-96' src="/images/sapan_primary.png" alt="loading..." />
+          <img className='h-96 w-96' src="/images/sapan_primary.png" alt="loading..." />
           </div>
         </div>
 
@@ -70,7 +70,7 @@ const HomePage = () => {
 
           {/* Image Section (aligned horizontally) */}
           <div className="mr-20">
-          <img className='h-screen w-96' src="/images/sapan_primary.png" alt="loading..." />
+          <img className='h-96 w-96' src="/images/sapan_primary.png" alt="loading..." />
           </div>
         </div>
       </div>
