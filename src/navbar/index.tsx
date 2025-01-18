@@ -1,8 +1,7 @@
 import { memo } from 'react'
 import { navbarConfig } from '../config/navbarconfig';
 import { NavLink } from 'react-router-dom';
-import './navbar.scss'
-import SvgImage from '../components/svgComp';
+import './navbar.scss';
 
 const Navbar = memo(() => {
 

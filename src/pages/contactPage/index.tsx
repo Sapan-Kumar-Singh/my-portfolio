@@ -1,4 +1,3 @@
-import React from 'react'
 import PagesHeader from '../../components/pagesHeader'
 import { contactConfig } from '../../config/contactConfig'
 import ContactForm from '../../components/contactForm'

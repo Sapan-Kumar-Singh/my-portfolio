@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation} from "react-router-dom";
 import Navbar from "./src/navbar";
 import SocialMedia from "./src/components/socialMedia";
 import InfiniteScroll from "react-infinite-scroll-component";
