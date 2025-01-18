@@ -61,7 +61,7 @@ const App = () => {
         const currentScroll = window.scrollY; 
         const targetOffset = section.offsetTop;
         if (Math.abs(currentScroll - targetOffset) > 50) {
-          section.scrollIntoView({block:"nearest", behavior: "smooth" });
+          section.scrollIntoView({ behavior: "smooth" });
         }
       } else {
         window.scrollTo({ top: 0, behavior: "smooth" });
