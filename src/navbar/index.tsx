@@ -37,11 +37,6 @@ const Navbar = memo(() => {
 
                     </ul>
                 </div>
-                <div  className='hidden display-menu-btn mr-20'>
-                    <button className='flex'>
-                        <SvgImage fileName='menu' svgHeight='50px' svgWidth='50px'/>
-                    </button>
-                </div>
             </nav>
 
         </>
