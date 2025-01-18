@@ -1,0 +1,24 @@
+
+.nav-icon{
+    text-shadow: 4px 4px 0px #ffbd39;
+    animation: fadeIn 2.5s linear forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@media only screen and (max-width:1023px) {
+
+    .nav-display-hidden{
+        display: none !important;
+    }
+    .display-menu-btn{
+        display: flex !important;
+    }
+}
