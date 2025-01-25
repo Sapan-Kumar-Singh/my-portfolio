@@ -8,7 +8,7 @@ import AboutPage from "./src/pages/aboutPage";
 import ResumePage from "./src/pages/resumePage";
 import Services from "./src/pages/servicesPage";
 import Skills from "./src/pages/skills";
-import Projects from "./src/pages/projects";
+import PageNotFound from "./src/pages/pageNotFound";
 import ContactPage from "./src/pages/contactPage";
 
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
     { key: "resume", component: <ResumePage /> },
     { key: "services", component: <Services /> },
     { key: "skills", component: <Skills /> },
-    { key: "projects", component: <Projects /> },
+    { key: "projects", component: <PageNotFound/> },
     { key: "contact", component: <ContactPage /> },
   ]);
   const [count, setCount] = useState(1); // Start with preloaded pages
