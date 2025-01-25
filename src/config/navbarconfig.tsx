@@ -3,7 +3,7 @@ export const navbarConfig: NavbarConfig[] = [{
     headerName: 'Home',
     field: 'home',
     hidden: false,
-    navigateTo: 'home',
+    navigateTo: '/',
 
 },
 {

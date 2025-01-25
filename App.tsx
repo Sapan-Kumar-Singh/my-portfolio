@@ -13,8 +13,8 @@ import ContactPage from "./src/pages/contactPage";
 
 const App = () => {
   const [pages, setPages] = useState([
-    { key: "home", component: <HomePage /> },
-  ]);
+    { key: "/", component: <HomePage /> },
+]);
   const extraPages = useRef([
     { key: "about", component: <AboutPage /> },
     { key: "resume", component: <ResumePage /> },
@@ -43,12 +43,12 @@ const App = () => {
   };
 
   useEffect(() => {
-    const currentPath = location.pathname.slice(1) || "home";
+    const currentPath = location.pathname.slice(1) || "/";
     const currentIndex = extraPages.current.findIndex((page) => page.key === currentPath);
   
     if (currentIndex >= 0 && currentIndex + 1 > pages.length) {
       setPages([
-        { key: "home", component: <HomePage /> },
+        ...pages,
         ...extraPages.current.slice(0, currentIndex + 1),
       ]);
       setCount(currentIndex + 1);
